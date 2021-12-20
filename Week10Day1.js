@@ -28,6 +28,7 @@ class SLL {
     reverse(){
       // reverse this list in-place without using any extra list. 
 
+      let originalhead = this.head;
       let runner = this.head;
       let follower = this.head;
       let next = null;
@@ -40,7 +41,11 @@ class SLL {
         runner = next;
       }
 
+      // At the end, the follower is at the new head
+      //    then make sure the original head's next 
+      //       points to NULL
       this.head = follower;
+      originalhead.next = null;
     }
 
     removeNegatives(){
