@@ -16,7 +16,7 @@ while(input.length >= 0){
                 if(temp >= 160){
                     console.log(message)
                     message = ""
-                   //delete i count of words so far 
+                   //input = input.slice(160)
             }
         }
 
